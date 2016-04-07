@@ -7,7 +7,57 @@
 </head>
 
 <body>
+	<!-- Need a header?? <header id="header" class="nav-area"> -->
+	<nav>
+		<ul class="top-nav">
+			<li><a href="#" title="view-music">View Music</a></li>
+			<li><a href="#" title="add-music">Add Music</a></li>
+			<li><a href="#" title="profile">Profile</a></li>
+		</ul>
+	</nav>
+	<!-- </header> -->
 
+<!-- song length range, artists, albums, genres, filter button -->
+	<div class="left-nav">
+		<label for="song-length">Song Length</label>
+		<input type="range" id="song-length" max="10">
+		<!-- max should be x, if x = length of present song. -->
+
+
+		<label for="artist">Artist</label>
+		<input name="artist" id="artist" list="artist">
+    <datalist id="artist">
+    <option value="Lil Wayne">
+    <option value="Big Freedia">
+    <option value="Electrelane">
+    <option value="Aaliyah">
+    <option value="Dr. John">
+    </datalist>
+
+
+    <label for="album">Album</label>
+		<input name="album" id="album" list="album">
+    <datalist id="album">
+    <option value="Tha Carter">
+    <option value="Tha Carter 2">
+    <option value="Tha Carter 3">
+    <option value="Tha Carter 4">
+    <option value="Tha Carter 5...j/k">
+    </datalist>
+
+
+    <label for="genre">Genre</label>
+    <input type="checkbox" id="genre" name="rock" value="rock"> Rock
+    <input type="checkbox" id="genre" name="pop" value="pop"> Pop
+    <input type="checkbox" id="genre" name="blues" value="blues"> Blues
+    <input type="checkbox" id="genre" name="classical" value="classical"> Classical
+    <input type="checkbox" id="genre" name="jazz" value="jazz"> Jazz
+    <input type="checkbox" id="genre" name="hip-hop" value="hip-hop"> Hip Hop
+	</div>
+
+	<div class="song-list">
+		
+	</div>
 
 </body>
 </html>
