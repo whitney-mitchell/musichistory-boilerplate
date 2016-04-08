@@ -3,12 +3,16 @@ nav {
 	background-color: #FFEC2D;
 	margin: 15px 30px 10px;
 }
-.top-nav li {
+.top-nav > li {
 	list-style-type: none;
 	display: inline;
 	margin: 20px 20px 5px 10px;
 	border-right: 2px solid;	
 	padding-right: 20px;
+}
+
+.top-nav  a:hover {
+	color: white;
 }
 
 .top-nav li:last-child {
@@ -48,11 +52,12 @@ nav {
 
 }
 
-.sidebar > article > button {
+.sidebar article button {
 	font-weight: bold;
 	clear: both;
-	margin: ;
+	
 }
+
 
 .song-list {
 	clear: top;
