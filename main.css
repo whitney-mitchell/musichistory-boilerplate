@@ -6,30 +6,47 @@ nav {
 .top-nav li {
 	list-style-type: none;
 	display: inline;
-
-	
+	margin: 20px 20px 5px 10px;
+	border-right: 2px solid;	
 }
 
-.top-nav > li :not(:last-child):after {
-	border-right: 2px solid;
+.top-nav li:last-child {
+	border-right: none;
+
 }
 
 .sidebar {
 	border: 2.5px solid;
 	background-color: #956d6d;
 	float: left;
-	width: 24%;
+	width: 20%;
+	height: 349.25px;
 	margin: 10px 10px 10px 30px;
-	
+	padding: 15px;
 }
 
+.sidebar > article {
+	margin: 2%;
+}
 
+.sidebar > article > input {
+	border: 2.5px solid;
+}
+.sidebar > article > label {
+	font-weight: bold;
+}
 
-.checkbox {
+.checkbox label{
 	float: left;
-	width: 100%;
-	
+	width: 50%;
+	font-weight: bold;
 
+}
+
+.sidebar > article > button {
+	font-weight: bold;
+	clear: both;
+	margin: ;
 }
 
 .song-list {
@@ -39,4 +56,16 @@ nav {
 	width: 68%;
 	margin: 10px 30px 10px 10px;
 	float: right;
+	padding: 10px;
 }
+
+.song-list section {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+
+
+
+
+
