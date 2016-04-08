@@ -1,6 +1,42 @@
 nav {
-	
-	font-size: 35;
-	color: orange;
+	border: 2.5px solid;
+	background-color: #FFEC2D;
+	margin: 15px 30px 10px;
+}
+.top-nav li {
+	list-style-type: none;
+	display: inline;
 
+	
+}
+
+.top-nav > li :not(:last-child):after {
+	border-right: 2px solid;
+}
+
+.sidebar {
+	border: 2.5px solid;
+	background-color: #956d6d;
+	float: left;
+	width: 24%;
+	margin: 10px 10px 10px 30px;
+	
+}
+
+
+
+.checkbox {
+	float: left;
+	width: 100%;
+	
+
+}
+
+.song-list {
+	clear: top;
+	border: 2.5px solid;
+	background-color: #FF6969;
+	width: 68%;
+	margin: 10px 30px 10px 10px;
+	float: right;
 }
