@@ -8,6 +8,7 @@ nav {
 	display: inline;
 	margin: 20px 20px 5px 10px;
 	border-right: 2px solid;	
+	padding-right: 20px;
 }
 
 .top-nav li:last-child {
@@ -36,10 +37,14 @@ nav {
 	font-weight: bold;
 }
 
-.checkbox label{
+.checkboxes label{
 	float: left;
 	width: 50%;
 	font-weight: bold;
+
+}
+.sidebar-heading {
+	display: block;
 
 }
 
@@ -53,7 +58,7 @@ nav {
 	clear: top;
 	border: 2.5px solid;
 	background-color: #FF6969;
-	width: 68%;
+	width: 65%;
 	margin: 10px 30px 10px 10px;
 	float: right;
 	padding: 10px;
@@ -64,7 +69,9 @@ nav {
 	margin-right: 4%;
 }
 
-
+.wrapper {
+	margin: 8%;
+}
 
 
 
