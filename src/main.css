@@ -1,0 +1,108 @@
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.wrapper {
+	margin: 8%;
+	width: 100%;
+}
+
+nav {
+	border: 2.5px solid;
+	background-color: #FFEC2D;
+	margin: 1% 4%;
+}
+
+.top-nav > li {
+	list-style-type: none;
+	display: inline;
+	margin: 20px 20px 5px 10px;
+	border-right: 2px solid;
+	padding-right: 20px;
+}
+
+.top-nav  a:hover {
+	color: white;
+}
+
+.top-nav li:last-child {
+	border-right: none;
+
+}
+
+.sidebar {
+	border: 2.5px solid;
+	background-color: #956d6d;
+	float: left;
+	max-width: 20%;
+	height: 50%;
+	margin: 1% 0 1% 4%;
+	padding: 1%;
+}
+
+.sidebar > article {
+	margin: 2%;
+}
+
+.sidebar > article > input {
+	border: 2.5px solid;
+	padding:  1%;
+	width: 80%;
+	height: 20px;
+}
+.sidebar > article > label {
+	font-weight: bold;
+}
+
+.checkboxes label{
+	float: left;
+	width: 50%;
+	font-weight: bold;
+	margin: auto 0;
+
+}
+.sidebar-heading {
+	display: block;
+
+}
+
+.sidebar article button {
+	font-weight: bold;
+	clear: both;
+	padding: 3%;
+	margin: 2% 1%;
+}
+
+.song-list {
+	clear: top;
+	border: 2.5px solid;
+	background-color: #FF6969;
+	width: 65%;
+	margin: 1% 4% 1% 0;
+	padding: 1%;
+	float: right;
+	max-width: 70%;
+	height: 50%
+}
+
+.song-list section {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+
+#songs-array {
+	clear: both;
+	position: relative;
+	margin: 1% 4%;
+	border: 2.5px solid;
+}
+
+.songs-array-ed {
+	clear: both;
+
+	margin: 1% .5%;
+}
+
