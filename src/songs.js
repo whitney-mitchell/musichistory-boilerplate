@@ -8,7 +8,6 @@
 // Loop over the array and remove any words or characters that obviously don't belong.
 // Students must find and replace the > character in each item with a - character.
 // Must add each string to the DOM in index.html in the main content area.
-var songsArray = document.getElementById("songs-array");
 var songs = [];
 
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
@@ -21,9 +20,13 @@ songs.unshift("Bounce - by 2 Chainz and Lil Wayne on the album ColleGrove");
 songs.push("Dip - by Danny Brown on the album Old");
 
 for (var i = 0; i < songs.length; i++) {
+
 	var edited = songs[i].replace(/[*@(!]/g, "").replace(">", "-");
-	songsArray.innerHTML += `<ul class="songs-array-ed">${edited}</ul>`;
+	var songsArray = document.getElementById("song-list");
+	songsArray.innerHTML += '<li class="songs-array">' + edited + '</li>';
+
+
 }
 //.replace is a string method! b/c we're applying the method to strings, not the array.
 
-// console.log(songsArray);
+console.log(songsArray);

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="src/main.css">
 </head>
 
 <body>
@@ -12,86 +12,80 @@
 		<!-- Need a header?? <header id="header" class="nav-area"> -->
 		<nav>
 			<ul class="top-nav">
-				<li><a href="#" title="view-music">View Music</a></li>
-				<li><a href="#" title="add-music">Add Music</a></li>
-				<li><a href="#" title="profile">Profile</a></li>
+				<li><a href="#" id="list-link" title="list-music">List Music</a></li>
+				<li><a href="#" id="add-link" title="add-music">Add Music</a></li>
+				<!-- <li><a href="#" title="profile">Profile</a></li> -->
 			</ul>
 		</nav>
-		<!-- </header> -->
 
+		<div class="hidden" id="add-view">
+			<input type="text" class="addInput" id="newSong" placeholder="Song Title">
+			<input type="text" class="addInput" id="newArtist" placeholder="Artist">
+			<input type="text" class="addInput" id="newAlbum" placeholder="Album">
+			<button name="add" id="addButton">Add</button>
+
+		</div>
+
+		<div id="list-view">
 	<!-- song length range, artists, albums, genres, filter button -->
-		<div class="sidebar">
-			<article>	
-				<label for="song-length" class="sidebar-heading">Song Length</label>
-				<input type="range" id="song-length" max="10">
-				<!-- max should be x, where x = length of present song. step? value? -->
-			</article>
-			<br>
-			<article>
-				<label for="artist" class="sidebar-heading">Artist</label>
-				<input name="artist" list="artist">
-			  <datalist id="artist">
-			  <option value="Lil Wayne">
-			  <option value="Big Freedia">
-			  <option value="Electrelane">
-			  <option value="Aaliyah">
-			  <option value="Dr. John">
-			  </datalist>
-			</article>
-			<br>
-			<article>
-			  <label for="album" class="sidebar-heading">Album</label>
-				<input name="album" list="album">
-			  <datalist id="album">
-			  <option value="Tha Carter">
-			  <option value="Tha Carter 2">
-			  <option value="Tha Carter 3">
-			  <option value="Tha Carter 4">
-			  <option value="Tha Carter 5...j/k">
-			  </datalist>
-			</article>
-			<br>
-			<article>
-			<!-- Should this be wrapped in something? for floating elements later? -->
-			  <div class="checkboxes">
-			    <label for="genre" class="sidebar-heading">Genre</label>
-			    <br>
-			    <label><input type="checkbox" id="genre" name="pop" value="pop"> Pop</label>
-			    <label><input type="checkbox" id="genre" name="blues" value="blues"> Blues</label>
-			    <label><input type="checkbox" id="genre" name="classical" value="classical"> Classical</label>
-			    <label><input type="checkbox" id="genre" name="rock" value="rock"> Rock</label>
-			    <label><input type="checkbox" id="genre" name="jazz" value="jazz"> Jazz</label>
-			    <label><input type="checkbox" id="genre" name="hip-hop" value="hip-hop"> Hip Hop</label>
-				</div>
-			</article>
-			<article>
-				<label><button name="filter-button" class="sidebar-heading">Filter</button></label>
-			</article>
+			<div class="sidebar">
+				<article>
+					<label for="song-length" class="sidebar-heading">Song Length</label>
+					<input type="range" id="song-length" max="10">
+					<!-- max should be x, where x = length of present song. step? value? -->
+				</article>
+				<br>
+				<article>
+					<label for="artist" class="sidebar-heading">Artist</label>
+					<input name="artist" list="artist">
+				  <datalist id="artist">
+				  <option value="Lil Wayne">
+				  <option value="Big Freedia">
+				  <option value="Electrelane">
+				  <option value="Aaliyah">
+				  <option value="Dr. John">
+				  </datalist>
+				</article>
+				<br>
+				<article>
+				  <label for="album" class="sidebar-heading">Album</label>
+					<input name="album" list="album">
+				  <datalist id="album">
+				  <option value="Tha Carter">
+				  <option value="Tha Carter 2">
+				  <option value="Tha Carter 3">
+				  <option value="Tha Carter 4">
+				  <option value="Tha Carter 5...j/k">
+				  </datalist>
+				</article>
+				<br>
+				<article>
+				<!-- Should this be wrapped in something? for floating elements later? -->
+				  <div class="checkboxes">
+				    <label for="genre" class="sidebar-heading">Genre</label>
+				    <br>
+				    <label><input type="checkbox" id="genre" name="pop" value="pop"> Pop</label>
+				    <label><input type="checkbox" id="genre" name="blues" value="blues"> Blues</label>
+				    <label><input type="checkbox" id="genre" name="classical" value="classical"> Classical</label>
+				    <label><input type="checkbox" id="genre" name="rock" value="rock"> Rock</label>
+				    <label><input type="checkbox" id="genre" name="jazz" value="jazz"> Jazz</label>
+				    <label><input type="checkbox" id="genre" name="hip-hop" value="hip-hop"> Hip Hop</label>
+					</div>
+				</article>
+				<article>
+					<label><button name="filter-button" class="sidebar-heading">Filter</button></label>
+				</article>
 
+			</div>
+
+			<div id="song-list">
+			</div>
 		</div>
 
-		<div class="song-list">
-			<section>
-				<h1>Song Name</h1>
-					<p>Artist name 	| 	Album name 	| 	Genre</p>
-			</section>
-
-			<section>
-				<h1>Song Name</h1>
-					<p>Artist name 	| 	Album name 	| 	Genre</p>
-			</section>
-
-			<section>
-				<h1>Song Name</h1>
-					<p>Artist name 	| 	Album name 	| 	Genre</p>
-			</section>
-
-			<section>
-				<h1>Song Name</h1>
-					<p>Artist name 	| 	Album name 	| 	Genre</p>
-			</section>
-		</div>
 	</div>
+	<script src="src/songs.js"></script>
+	<script src="src/main.js"></script>
+	<!-- <script src="xhr.js"></script> -->
 </body>
 
 </html>

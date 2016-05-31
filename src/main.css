@@ -15,6 +15,15 @@ nav {
 	margin: 1% 4%;
 }
 
+/*hidden class to toggle between*/
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
 .top-nav > li {
 	list-style-type: none;
 	display: inline;
@@ -75,7 +84,7 @@ nav {
 	margin: 2% 1%;
 }
 
-.song-list {
+#song-list {
 	clear: top;
 	border: 2.5px solid;
 	background-color: #FF6969;
@@ -87,22 +96,10 @@ nav {
 	height: 50%
 }
 
-.song-list section {
-	margin-left: 4%;
-	margin-right: 4%;
-}
-
-
-#songs-array {
+.songs-array {
 	clear: both;
 	position: relative;
 	margin: 1% 4%;
-	border: 2.5px solid;
 }
 
-.songs-array-ed {
-	clear: both;
-
-	margin: 1% .5%;
-}
 
